@@ -15,12 +15,20 @@ npm install --save pumbaui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'pumbaui'
+import {Button} from 'pumbaui'
 import 'pumbaui/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <React.Fragment>
+        <Button type='primary'>Primary Button</Button>
+        <Button>Default Button</Button>
+        <Button type='dashed'>Dashed Button</Button>
+        <Button type='test'>Test Button</Button>
+        <Button type='link'>Link Button</Button>
+      </React.Fragment>
+    )
   }
 }
 ```
